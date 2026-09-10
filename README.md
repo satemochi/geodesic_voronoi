@@ -7,7 +7,7 @@ This is a Python code for the geodesic two-dimensional Voronoi diagrams:
 
 
 <div align="center">
-<img src="https://github.com/satemochi/geodesic_voronoi_drawing/blob/master/examples/ex1.png" width=45%><img src="https://github.com/satemochi/geodesic_voronoi_drawing/blob/master/examples/ex_ipe.png" width=45%></div>
+<img src="https://github.com/satemochi/geodesic_voronoi/blob/main/examples/ex1.png" width=45%><img src="https://github.com/satemochi/geodesic_voronoi/blob/main/examples/ex_ipe.png" width=45%></div>
 
 
 ## Description
