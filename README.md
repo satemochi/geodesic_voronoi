@@ -13,7 +13,7 @@ This is a Python code for the two-dimensional geodesic Voronoi diagrams:
 ## Description
 - We consider the following problem in computational geometry:
 
-**Given a (bounded) polygon $P \subset \mathbb{R}^2$ and a
+> **Given a (bounded) polygon $P \subset \mathbb{R}^2$ and a
 set $S \subset P$ of points, compute the Voronoi diagram of $S$ in
 the interior of $P$.**
 
