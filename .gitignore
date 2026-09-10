@@ -1,0 +1,7 @@
+*.egg-info/
+*.egg
+#.gitignore
+*.pyc
+.DS_Store
+.pytest_cache/ 
+__pycache__/
