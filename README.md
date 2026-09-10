@@ -1,27 +1,27 @@
 Geodesic Voronoi Diagrams
 ====
 
-This is a Python code for the geodesic two-dimensional Voronoi diagrams:
+This is a Python code for the two-dimensional geodesic Voronoi diagrams:
 - Voronoi diagrams of points in a polygon
 - Voronoi diagrams in a bounded plane contains obstacles.
 
 
 <div align="center">
-<img src="https://github.com/satemochi/geodesic_voronoi/blob/main/examples/ex1.png" width=45%><img src="https://github.com/satemochi/geodesic_voronoi/blob/main/examples/ex_ipe.png" width=45%></div>
+<img src="https://github.com/satemochi/geodesic_voronoi/blob/main/examples/ex_ipe.png" width=45%><img src="https://github.com/satemochi/geodesic_voronoi/blob/main/examples/ex1.png" width=45%></div>
 
 
 ## Description
 - We consider the following problem in computational geometry:
 
-> Given a (bounded) polygon $P \subset \mathbb{R}^2$ and a
+** Given a (bounded) polygon $P \subset \mathbb{R}^2$ and a
 set $S \subset P$ of points, compute the Voronoi diagram of $S$ in
-the interior of $P$.
+the interior of $P$.**
 
 - Our implementation solves this problem in the following naive way:
 1. [Visibility graphs](https://en.wikipedia.org/wiki/Visibility_graph) / [visibility polygons](https://en.wikipedia.org/wiki/Visibility_polygon)
 1. [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 1. [Additively weighted Voronoi diagrams](https://en.wikipedia.org/wiki/Weighted_Voronoi_diagram) (drawing with the hidden surface elimination)
-1. Boundary tracing
+1. [Boundary tracing](https://en.wikipedia.org/wiki/Boundary_tracing) / [Boolean operations on polygons](https://en.wikipedia.org/wiki/Boolean_operations_on_polygons)
 
 - There are a lot of bugs, so it's still under-coded.
 
@@ -44,7 +44,7 @@ the interior of $P$.
 
 
 ## Usage
-See, python codes in `examples` directory.
+See, python codes in [examples](https://github.com/satemochi/geodesic_voronoi/tree/main/examples) directory.
 
 
 
