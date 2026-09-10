@@ -17,6 +17,13 @@ This is a Python code for the two-dimensional geodesic Voronoi diagrams:
 set $S \subset P$ of points, compute the Voronoi diagram of $S$ in
 the interior of $P$.**
 
+Computing the geodesic Voronoi diagram is equivalent to constructing
+the oracle $f$ mapping to $P \to S,$
+such that $f(p) = \mathrm{argmin}_{s \in S} \|p - s\|_P,$
+where $\|\cdot\|_P$ is the
+[geodesic distance](https://en.wikipedia.org/wiki/Distance_(graph_theory))
+with respect to $P$.
+
 - Our implementation solves this problem in the following naive way:
 1. [Visibility graphs](https://en.wikipedia.org/wiki/Visibility_graph) / [visibility polygons](https://en.wikipedia.org/wiki/Visibility_polygon)
 1. [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
@@ -31,6 +38,7 @@ the interior of $P$.**
 - [GLFW](https://www.glfw.org)
 - [Matplotlib](https://matplotlib.org)
 - [NetworkX](https://networkx.github.io)
+- [Numpy](https://numpy.org)
 - [PyOpenGL](https://pypi.org/project/PyOpenGL/)
 - [PyVisiLibity](https://github.com/tsaoyu/PyVisiLibity)
 - [Shapely](https://shapely.readthedocs.io/en/stable/)
@@ -82,6 +90,8 @@ if __name__ == '__main__':
     # plt.savefig('ex1.png', bbox_inches='tight')
     plt.show()
 ```
+When declaring the input polygon in Shapely,
+its exterior must be CCW and each hole must be CW.
 
 ---
 Copyright (c) 2026, <br/>
