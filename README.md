@@ -11,18 +11,19 @@ This is a Python code for the geodesic two-dimensional Voronoi diagrams:
 
 
 ## Description
-- We consider the following problem in computational geometry problem:
+- We consider the following problem in computational geometry:
 
 > Given a (bounded) polygon $P \subset \mathbb{R}^2$ and a
-set $S \subset P$ of points, compute the Voronoi diagram of $S$ in side of $P$.
+set $S \subset P$ of points, compute the Voronoi diagram of $S$ in
+the interior of $P$.
 
 - Our implementation solves this problem in the following naive way:
-1. Visibility graphs
-1. Dijkstra algorithm
-1. Drawing with the hidden surface elimination
+1. [Visibility graphs](https://en.wikipedia.org/wiki/Visibility_graph) / [visibility polygons](https://en.wikipedia.org/wiki/Visibility_polygon)
+1. [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+1. [Additively weighted Voronoi diagrams](https://en.wikipedia.org/wiki/Weighted_Voronoi_diagram) (drawing with the hidden surface elimination)
 1. Boundary tracing
 
-- A lot of bugs are contained, so still under-coding...
+- There are a lot of bugs, so it's still under-coded.
 
 
 ## Requirements
@@ -37,13 +38,13 @@ set $S \subset P$ of points, compute the Voronoi diagram of $S$ in side of $P$.
 
 ## Installation
 1. `pip install glfw matplotlib networkx PyOpenGL visilibity shapely`
-1. Download `geodesic_voronoi_diagram.py` file, and
+1. Download `geodesic_voronoi.py` file, and
 1. Copy and place it in any directory included in `sys.path` or the `PYTHONPATH` variable.
 
 
 
 ## Usage
-See, python codes in the directory `examples`.
+See, python codes in `examples` directory.
 
 
 
