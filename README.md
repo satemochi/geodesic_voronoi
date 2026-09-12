@@ -18,11 +18,11 @@ set $S \subset P$ of points, compute the Voronoi diagram of $S$ in
 the interior of $P$.**
 
 Computing the geodesic Voronoi diagram is equivalent to constructing
-the oracle $f$ mapping to $P \to S,$
-such that $f(p) = \mathrm{argmin}_{s \in S} \|p - s\|_P,$
+the oracle $f$ mapping $P \to S,$
+such that $\forall p \in P ~:~ f(p) = \mathrm{argmin}_{s \in S} \|p - s\|_P$
 where $\|\cdot\|_P$ is the
 [geodesic distance](https://en.wikipedia.org/wiki/Distance_(graph_theory))
-with respect to $P$.
+with respect to (the visibiity graph of) $P$.
 
 - Our implementation solves this problem in the following naive way:
 1. [Visibility graphs](https://en.wikipedia.org/wiki/Visibility_graph) / [visibility polygons](https://en.wikipedia.org/wiki/Visibility_polygon)
