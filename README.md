@@ -19,7 +19,7 @@ the interior of $P$.**
 
 Computing the geodesic Voronoi diagram is equivalent to constructing
 the oracle $f$ mapping $P \to S,$
-such that $\forall p \in P ~:~ f(p) = \mathrm{argmin}_{s \in S} \|p - s\|_P$
+such that $\forall p \in P : f(p) = \mathrm{argmin}_{s \in S} \|p - s\|_P$
 where $\|\cdot\|_P$ is the
 [geodesic distance](https://en.wikipedia.org/wiki/Distance_(graph_theory))
 with respect to (the visibiity graph of) $P$.
